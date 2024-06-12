@@ -1,0 +1,113 @@
+.body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:50% 50%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: all 1s ease-in-out;
+    overflow: hidden; 
+}
+
+
+.login-container {
+    background: white;
+    padding: 15%;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.475);
+    border-radius: 20px;
+    width: 0;
+    opacity: 0; 
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+.img {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.134), rgba(0, 0, 0, 0.55)), url(richard-vance-cabusao-adQAb-L-YkE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200%;
+    height: 100vh;
+    margin-left: -100%;
+    transition: all 1s ease-in-out;
+}
+
+.logo img{
+    width: 100%;
+    height: 15vh;
+    transition: all 1s ease-in-out;
+}
+
+.login-form h2 {
+    margin: 0 0 20px;
+    color: #084c44;
+    text-align: center;
+    font-size: 7vh;
+    transition: all 1s ease-in-out;
+    max-width: 100%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 1s ease-in-out;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #084c44ae;
+    background: transparent;
+    color: #084c44;
+    font-size: 3.5vh;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #084c44;
+    transition: 0.3s;
+    font-size: 3.5vh;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #084c44;
+    color: #fff;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #073b35;
+}
+
+.login-container-show {
+    opacity: 1; 
+    width: 100%;
+    z-index: 10;
+    
+}
+.img-show {
+    width: 115%;
+    margin-left: -15%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.134), rgba(0, 0, 0, 0.55)), url(richard-vance-cabusao-adQAb-L-YkE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+}
