@@ -1,0 +1,42 @@
+/* navbar */
+.header {
+    background-color: #084c44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 5px 2%;
+    transition: all 0.5s;
+  }
+  
+  .header .logo {
+    cursor: pointer;
+  }
+  
+  .header .logo img {
+    height: 15vh;
+    width: auto;
+    transition: all 0.2s;
+  }
+  
+  .header .nav-links li {
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.2s;
+    font-size: 3vh;
+    
+  }
+  
+  .header .nav-links li:hover, .header .nav-links a:hover {
+    font-size: 4vh;
+    color: #eceff1;
+  }
+  
+  .header .nav-links a {
+    font-size: 700;
+    color: #c3e8e4;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer !important;
+  }
+  

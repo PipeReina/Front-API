@@ -1,8 +1,13 @@
+// estudiantes.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Nav from "../nav/Nav";
 import { Modal, Button, Form } from 'react-bootstrap';
 import "./estudiantes.css";
+import { cerrarSesion } from '../utilidades'; 
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 const ListE = ({ brand }) => {
   const url = "http://localhost:3000/estudiantes";
@@ -17,7 +22,7 @@ const ListE = ({ brand }) => {
   const [operacion, setOperacion] = useState(1);
   const [title, setTitle] = useState('');
   const [showModal, setShowModal] = useState(false);
-
+  
   useEffect(() => {
     getEstudiantes();
   }, []);
@@ -98,7 +103,7 @@ const ListE = ({ brand }) => {
   return (
     <div className="App">
       <div className="container-fluid"></div>
-      <Nav></Nav>
+      <Nav cerrarSesion={cerrarSesion} />
       <div className="too">
         <div className="conta">
           <h1>Tabla Estudiantes CRUD</h1>

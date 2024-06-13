@@ -40,10 +40,10 @@ class Login extends Component {
         cookies.set('Nombre', respuesta.nombre, {path:"/"});  
         cookies.set('Usuario', respuesta.Usuario, {path:"/"});
         alert(`Bienvenido ${respuesta.Usuario}  ${respuesta.nombre}`);
-        if(respuesta.Usuario=="Estudiante"){
-          window.location.href="./Home"
+        if(respuesta.Usuario==="Estudiante"){
+          window.location.href="./home-e"
         }else{
-          window.location.href="./Home"
+          window.location.href="./home-p"
         }
 
       } else {
